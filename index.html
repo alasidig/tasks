@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GetDone Tasks Manager</title>
+</head>
+<body>
+    <main>
+        <h1>Welcome to GetDone</h1>
+        <section>
+            <form id="task-form">
+                <label for="title">Title:
+                <input type="text" id="title" name="title" placeholder="Task title..." required>
+                </label>
+                <label for="due-date">Due Date:
+                <input type="date" id="due-date" name="due-date"  required>
+                </label>
+                <Button type="submit" class="btn btn-success">
+                    Create Task
+                </Button> 
+            </form>
+        </section>
+<section id="tasks">
+    <article id="1" class="task-details over-due">
+        <h2 class="task-title">Prepare for the mid</h2>
+        <div class="task-meta">
+            <p>Due Date: 3/12/2024</p>
+            <div class="task-btns">
+                <button class="btn btn-success">Done</button>
+                <button class="btn-danger btn">Delete</button>
+            </div>
+        </div>
+    </article>
+</section>
+    </main>
+    <script src="frontendJS.js"></script>
+</body>
+</html>
